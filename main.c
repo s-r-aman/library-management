@@ -1,13 +1,19 @@
 #include<stdio.h>
-#include"functions.h"
-int main()
-{
-   int i,r;
-   printf("*****Welcome to library management*****\n ");
-   printf("\nenter password\n");
-   r = password();
-   if(r==1)
-      {
-       first_page();
-      }
+#include"functions.h"   //to include all the functions
+
+int main(){
+    logIn();
+
+
+    int enter,choice;
+
+    choice = firstPageF();
+
+
+    switch (choice){
+        case 1:  addBooksF();
+
+    }
+
+
 }
